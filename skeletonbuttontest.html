@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttontest</title>
+</head>
+<body>
+    <div class="fotogalleri">
+        <img id=yellow class="museumimage yellow" src="./Assets/yellow.png">
+        <img class="museumimage red" src="./Assets/Red.png">
+        <img class="museumimage purple" src="./Assets/Purple.png">
+        <img class="museumimage blue" src="./Assets/Blue.png">
+        <img class="museumimage green" src="./Assets/Green.png">
+    </div>
+    <div class="invis">
+        <h1 class="splash yellowtext" for="yellow">Biology and Medicine</h1>
+        <h1 class="splash redtext">Robotics and AI</h1>
+        <h1 class="splash purpletext">Cosmology</h1>
+        <h1 class="splash bluetext">Evolution</h1>
+        <h1 class="splash greentext">Ecology</h1>
+    </div>
+</body>
+</html>
+
+<style>
+
+
+    body{
+        background-color: rgb(47, 47, 47);
+    }
+
+    .fotogalleri{
+        background-color: rgb(33, 33, 33);
+        justify-content:space-evenly;
+        display: flex;
+    }
+
+    .museumimage{
+        max-width: 19%;
+        height: auto;
+    }
+
+    .museumimage:hover{
+        filter: blur(8px);
+        transition-duration: 200ms;
+
+    }
+    
+</style>

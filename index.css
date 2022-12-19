@@ -1,0 +1,304 @@
+/* General CSS applying to all pages*/
+
+h1{
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
+h2{
+    font-family: 'Lexend Zetta', sans-serif;
+    color: rgb(45, 45, 45);
+    font-size: 1.2em;
+}
+
+main{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+body{
+    display: block;
+    margin: 0;
+}
+
+/* For the index page*/
+
+.frontpageimg{
+    width: 45%;
+    max-width: 350px;
+    height: auto;
+    float: right;
+    margin: 10px;
+}
+
+
+
+/* CSS applying to the navigation bar at the top of each page */
+header{
+    max-width:100%;
+    height:100px;
+    display:flex;
+    z-index: 9000;
+    background-color: rgb(94, 94, 94);
+    z-index: 10000;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+
+.animation{
+    height: 100%;
+    display: flex;
+    vertical-align: center;
+}
+
+.logotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow:hidden;
+    width: 100%;
+
+}
+
+.logotext h1{
+    font-size: 0.8em;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.logotext h2{
+    font-size: 0.6em;
+    padding-top: 5px;
+    margin: 0;
+}
+
+nav.bannerbuttons{
+    width: 100%;
+    color:black;
+
+    justify-content:space-evenly;
+    flex-direction: row;
+    align-items: center;
+    display: none;
+}
+
+.bannerbuttons a{
+    display: none;
+    justify-content:space-evenly;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    animation-duration: 300ms;
+    font-size: 1em;
+    font-family: 'Jura', sans-serif;
+
+}
+
+.bannerbuttons a:hover{
+    color: rgb(141, 141, 141);
+    text-shadow: 2px 2px 2px black;
+
+}
+
+div.imagelink{
+    height:250px;
+    width:400px;
+    position:relative;
+    text-align: center;
+    margin: 10px 5px 10px;
+}
+
+.navpic{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9000;
+    overflow-y:visible;
+}
+
+/* Interactive navigation buttons */
+
+.blurbutton{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(54, 54, 54);
+    padding: 20px;
+}
+
+.navpic:hover{
+    filter: blur(5px);
+    z-index: 7000;
+    transition-duration: 300ms;
+}
+
+.imageid{
+    text-align: center;
+    position: absolute;
+    pointer-events: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(104, 66, 217);
+    z-index: 8000;
+    left: 0;
+    right: 0;
+}
+
+/* The text tags associated with the HB menu */
+
+.imagetitle{
+    top: 10%;
+    z-index: 8000;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2em;
+}
+
+.imagedesc{
+    top: 55%;
+    font-family: 'Jura', sans-serif;
+    color: white;
+    font-family: 'Jura', sans-serif;
+
+}
+
+/* GIF animation */
+
+.frame{
+    content: url(./Assets/ClearLogo.png);
+    max-width:100px;
+    height: auto;
+}
+
+.frame:hover{
+    content: url(./Assets/Clear\ logo2.gif);
+}
+
+.emphasis{
+    color: aqua;
+}
+
+
+
+/* Hamburger menu */
+    /* Icon and invisible checkbox*/
+
+.hbmenu{
+    display: flex;
+    min-width: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 0;
+    text-align: center;
+}
+
+.hbmenu input{
+    display: none;
+}
+
+.hbmenu label{
+    color: white;
+    font-size: 1.5em;
+
+}
+
+.hbmenu label i:hover{
+    color: grey;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hbelements a{
+    color: white;
+    text-decoration: none;
+}
+
+.hbelements a:hover{
+    color: grey;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hbelements label{
+    color: aliceblue;
+}
+
+.hbelements label:hover{
+    color: grey;
+    text-shadow: 2px 2px 2px black;
+}
+
+#hbcheck:checked ~ .hbelements{
+    display: flex;
+}
+
+    /* Open hamburger menu with navigation links */
+.hbelements{
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(105, 105, 105, 0.805);
+    text-align: center;
+    justify-content: space-evenly;
+    z-index: 11000;
+    display: none;
+    font-family: 'Jura', sans-serif;
+    font-size: 3em;
+}
+
+/*Media Queries etc*/
+@media screen and (min-width: 500px){
+    .logotext h1{
+        font-size: 1.4em;
+        max-width: 330px;
+    }
+    .logotext h2{
+        font-size: 1.2em;
+        max-width: 330px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .bannerbuttons a{
+        display: flex;
+    }
+    header{
+        height:100px;
+    }
+
+    .hbmenu label i{
+        display: none;
+    }
+
+    nav.bannerbuttons{
+        display: flex;
+    }
+
+    .hbmenu{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    .bannerbuttons a{
+        font-size: 1.5em;
+    }
+
+    nav.bannerbuttons{
+        max-width: 55%;
+    }
+
+    .logotext{
+        width: fit-content;
+    }
+
+    .logotext h1{
+        max-width: 350px;
+    }
+    .logotext h2{
+        max-width: 350px;
+    }
+}
