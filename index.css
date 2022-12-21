@@ -218,6 +218,7 @@ div.imagelink{
 .hbelements a:hover{
     color: grey;
     text-shadow: 2px 2px 2px black;
+
 }
 
 .hbelements label{
@@ -235,7 +236,7 @@ div.imagelink{
 
 /* Open hamburger menu with navigation links */
 .hbelements{
-    position: absolute;
+    position:absolute;
     flex-direction: column;
     left: 0;
     right: 0;
@@ -260,6 +261,10 @@ footer{
     padding-bottom: 10px;
     bottom: 0px;
     background-color: #21562a;
+}
+
+footer section{
+    margin-left: 10px;
 }
 
 footer section p,footer section h3,footer section a{
