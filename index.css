@@ -12,6 +12,12 @@ h2{
 
 h3{
     font-family: 'Jura', sans-serif;
+
+}
+
+h4{
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 2px;
 }
 
 main{
@@ -216,7 +222,7 @@ div.imagelink{
 }
 
 .hbelements a:hover{
-    color: grey;
+    color: #3fa752;
     text-shadow: 2px 2px 2px black;
 
 }
@@ -226,7 +232,7 @@ div.imagelink{
 }
 
 .hbelements label:hover{
-    color: grey;
+    color: #3fa752;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -300,6 +306,7 @@ footer section a:hover{
     max-width: 350px;
     height: auto;
     margin: 10px;
+    margin-top: 20px;
     min-width: 200px;
 }
 
@@ -343,7 +350,39 @@ footer section a:hover{
     max-width: 300px;
 }
 
+.exibitandeventsbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 45px ;
+    margin-bottom: 80px;
+}
+
+.exibitandeventsbuttons a{
+    width: 45%;
+    background-color: #21562a;
+    border-radius: 20px;
+    padding: 35px 0px;
+    border: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lexend Exa', sans-serif; 
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.408);
+    
+}
+
+.exibitandeventsbuttons a:hover{
+    background-color: #3fa752;
+    color: black;
+    transition-duration: 200ms;
+    box-shadow: none;
+}
 /*For the About page*/
+.aboutuspage h3{
+    font-size: 1.5em;
+}
+
 .faqmapimg{
     float: none;
     margin: 0;
@@ -356,6 +395,10 @@ footer section a:hover{
     width: 35vw;
 }
 
+.faqvolunteer h4{
+    color: #21562a;
+}
+
 /*For the Exibitions page*/
 .fotogalleri img:hover{
     filter: blur(8px);
@@ -365,6 +408,14 @@ footer section a:hover{
 .fotogalleri{
     display: flex;
     flex-direction: column;
+}
+
+.fotogalleri p{
+    margin: 0px 20px 20px 20px;
+}
+
+.fotogalleri h3{
+    margin-left: 20px;
 }
 
 .fotogalleri figure{
@@ -398,6 +449,48 @@ footer section a:hover{
     max-width: 270px;
     align-self: center;
 }
+
+/*For the events page*/
+
+.newphoto{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+    margin-top: 20px;
+
+}
+
+.event h3{
+    text-align: center;
+}
+
+.event{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.072);
+    margin: 10px;
+    padding: 10px;
+}
+
+.event:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.event p{
+    margin-bottom: 20px;
+}
+
+.event h4{
+    text-align: center;
+    margin: 4px 4px 10px 4px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /*Media Queries etc*/
 @media screen and (min-width: 500px){
@@ -455,11 +548,40 @@ footer section a:hover{
         float: right;
     }
 
+    .event{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .newphoto{
+        width: 400px;
+        padding-left: 15px;
+        margin-top: 0px;
+    }
 
 }
 
 
 @media screen and (min-width: 1000px){
+
+    p{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1.9em;
+        font-weight: 800;
+
+    }
+
     .bannerbuttons a{
         font-size: 1.5em;
     }
@@ -477,5 +599,28 @@ footer section a:hover{
     }
     .logotext h2{
         max-width: 350px;
+    }
+
+    .fotogalleri p{
+        font-size: 1.3em;
+    }
+
+    .fotogalleri h3{
+        font-size: 2em;
+    }
+
+    .event p{
+        font-size: 1.2em;
+    }
+
+    .event h3{
+        font-size: 2em;
+    }
+
+    .welcome h1{
+        text-align: center;
+    }
+    .aboutuspage h3{
+        font-size: 2.3em;
     }
 }
