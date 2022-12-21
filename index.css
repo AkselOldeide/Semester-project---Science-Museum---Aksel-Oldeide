@@ -10,6 +10,10 @@ h2{
     font-size: 1.2em;
 }
 
+h3{
+    font-family: 'Jura', sans-serif;
+}
+
 main{
     margin-left: 8%;
     margin-right: 8%;
@@ -17,7 +21,8 @@ main{
 
 main p{
     font-family: 'Barlow', sans-serif;
-
+    margin: 1px;
+    overflow: hidden;
 }
 
 body{
@@ -26,69 +31,9 @@ body{
     background-color: #daf1de;
 }
 
-/* For the index page*/
-
-.frontpageimg{
-    width: 45%;
-    max-width: 350px;
-    height: auto;
-    float: right;
-    margin: 10px;
+head{
+    cursor: url(./Clear\ logo.png), default;
 }
-
-.topimages{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    margin: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.topimage{
-    width: 80%;
-    height: auto;
-    padding: 10px;
-}
-
-/*For the footer*/
-
-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 14px;
-    background-color: #21562a;
-}
-
-footer section p,h3,a{
-    color: white;
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #3fa752;
-}
-
-footer section p{
-    margin: 0;
-    padding: 2px;
-}
-
-.footersocials{
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-.footersocials a i{
-    font-size: 20px;
-    padding: 5px;
-}
-
-footer section a:hover{
-    color: #3fa752;
-}
-
-
 
 /* CSS applying to the navigation bar at the top of each page */
 header{
@@ -150,7 +95,6 @@ nav.bannerbuttons{
     animation-duration: 300ms;
     font-size: 1em;
     font-family: 'Jura', sans-serif;
-
 }
 
 .bannerbuttons a:hover{
@@ -228,6 +172,7 @@ div.imagelink{
     content: url(./Assets/ClearLogo.png);
     max-width:100px;
     height: auto;
+    
 }
 
 .frame:hover{
@@ -237,8 +182,6 @@ div.imagelink{
 .emphasis{
     color: aqua;
 }
-
-
 
 /* Hamburger menu */
     /* Icon and invisible checkbox*/
@@ -290,7 +233,7 @@ div.imagelink{
     display: flex;
 }
 
-    /* Open hamburger menu with navigation links */
+/* Open hamburger menu with navigation links */
 .hbelements{
     position: absolute;
     flex-direction: column;
@@ -307,6 +250,150 @@ div.imagelink{
     font-size: 3em;
 }
 
+/*For the footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    bottom: 0px;
+    background-color: #21562a;
+}
+
+footer section p,footer section h3,footer section a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #3fa752;
+    font-family: 'Jura', sans-serif;
+}
+
+footer section p{
+    margin: 0px 5px 0px 5px;
+    padding: 2px;
+}
+
+.footersocials{
+    display: flex;
+    flex-direction: column;
+}
+
+.footersocials a i{
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer section a:hover{
+    color: #3fa752;
+}
+
+/* For the index page*/
+
+.frontpageimg{
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.topimages{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}
+
+.undertitle{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 70px 0px 20px;
+
+    text-shadow:2px 2px 2px #66cf7793;
+}
+
+.topimage{
+    width: 50%;
+    min-width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+.indexmuseumpics{
+    display: flex;
+    flex-direction: row;
+    margin: 70px 5px 70px 5px;
+    justify-content: space-evenly;
+}
+
+.indexmuseumpics img{
+    min-width: 45%;
+    height: auto;
+    margin: 3px;
+    max-width: 300px;
+}
+
+/*For the About page*/
+.faqmapimg{
+    float: none;
+    margin: 0;
+    z-index: 500;
+}
+
+.faqmapimg a img{
+    max-width: 300px;
+    min-width: 170px;
+    width: 35vw;
+}
+
+/*For the Exibitions page*/
+.fotogalleri img:hover{
+    filter: blur(8px);
+    transition-duration: 200ms;
+}
+
+.fotogalleri{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotogalleri figure{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 10px 0px;
+    background-color: rgba(0, 0, 0, 0.072);
+}
+
+.museumimage{
+    display: none;
+    max-width: 40%;
+    height: fit-content;
+}
+
+.fotogalleri figure figcaption{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: left;
+    margin: 5px;
+}
+
+.fotogalleri figure:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.museumimagephone{
+    display: block;
+    width: 60%;
+    max-width: 270px;
+    align-self: center;
+}
+
 /*Media Queries etc*/
 @media screen and (min-width: 500px){
     .logotext h1{
@@ -316,6 +403,18 @@ div.imagelink{
     .logotext h2{
         font-size: 1.2em;
         max-width: 330px;
+    }
+    
+    footer{
+        flex-direction: row;
+    }
+
+    .faqmapimg{
+        position: relative;
+        top: 10%;
+        float: right;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -338,6 +437,20 @@ div.imagelink{
     .hbmenu{
         display: none;
     }
+
+    .museumimage{
+        display: block;
+    }
+
+    .museumimagephone{
+        display: none;
+    }
+
+    .frontpageimg{    
+        float: right;
+    }
+
+
 }
 
 
